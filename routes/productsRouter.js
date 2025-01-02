@@ -6,4 +6,4 @@ router.get("/", function(req, res){
     res.send("hey there its working,Products");
 });
 
-module.exports = router
+module.exports = router;

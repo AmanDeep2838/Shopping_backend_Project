@@ -5,7 +5,6 @@ const userSchema = mongoose.Schema({
     email: String,
     password: String,
     cart: [],
-    isadmin: Boolean,
     orders: [],
     contact: Number,
     picture: String,
