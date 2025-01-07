@@ -8,7 +8,12 @@ router.get("/", function (req, res) {
 
 });
 
-router.get("shop", isloggedIn, function (req, res){
+router.get("/shop", isloggedIn,async function (req, res){
+    let products = await productModel.find();
+    res.render("shop", { products});
+})
+
+router.get("/logout", isloggedIn, function (req, res){
     res.render("shop");
 })
 
